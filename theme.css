@@ -25,6 +25,7 @@ p {
   font-family: 'arial black';
   letter-spacing: .5px;
 }
+
 hr {
     border-top: 2px solid #AE0000;
     width: 50px;
@@ -85,14 +86,13 @@ ul {
 }
 
 #resume {
-  width: 100px;
+  width: 120px;
   height: 100px;
   font-size: 12px;
   margin: auto;
   margin-top: 40px;
   border-radius: 5%;
   height: 40px;
-
 }
 
 #info:hover {
@@ -101,113 +101,52 @@ ul {
 #home:hover {
   transform: rotate(-90deg);
 }
-#small_slider {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-
-#small_slider[type=range]::-webkit-slider-runnable-track {
-  height: 10px;
-}
-
-#small_slider[type=range]::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background: #AE0000;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -6px;
-}
-
-
-#slider-div{
-  margin: auto; 
-  width: 500px;
-}
 
 input[type=range] {
+  -webkit-appearance: none;
   text-align: center;
   height: 29px;
-  -webkit-appearance: none;
   margin: auto;
-  margin-top: 20px;
-  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
   background: rgba(1,1,1, 0);
 }
-input[type=range]:focus {
-  outline: none;
-}
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 20px;
+  height: 10px;
   cursor: pointer;
-  animate: 0.2s;
   background: #FFFFFF;
   border-radius: 10px;
   border: 1px solid #D3D3D3;
 }
 input[type=range]::-webkit-slider-thumb {
-  height: 40px;
-  width: 40px;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
   border-radius: 20px;
   background: #AE0000;
   cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -10px;
+  margin-top: -6px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #FFFFFF;
-}
+
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 20px;
+  height: 10px;
   cursor: pointer;
-  animate: 0.2s;
   background: #FFFFFF;
   border-radius: 10px;
   border: 1px solid #D3D3D3;
 }
 input[type=range]::-moz-range-thumb {
   border: 1px solid #000000;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   border-radius: 20px;
   background: #AE0000;
   cursor: pointer;
-  margin-top: -10px;
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #37A925;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px #000000;
-}
-input[type=range]::-ms-fill-upper {
-  background: #37A925;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px #000000;
-}
-input[type=range]::-ms-thumb {
-  margin-top: 1px;
-  box-shadow: 1px 1px 1px #000000;
-  border: 2px solid #000000;
-  height: 20px;
-  width: 23px;
-  border-radius: 7px;
-  background: #FFFFFF;
-  cursor: pointer;
+  margin-top: -6px;
 }
 
 #container {
