@@ -13,7 +13,7 @@ h1 {
   text-shadow: 0px 0px 5px #000000;
   border-color: black;
   font-size: 60px;
-  font-family: 'arial black';
+  font-family: 'Archivo Black', sans-serif;
   letter-spacing: 2px;
 } 
 
@@ -22,7 +22,7 @@ p {
   font-size: 12px;
   color: black;
   margin: 0px;
-  font-family: 'arial black';
+  font-family: 'Archivo Black', sans-serif;
   letter-spacing: .5px;
 }
 
