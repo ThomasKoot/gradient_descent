@@ -10,11 +10,12 @@ h1 {
   margin: 0;
   margin-top: 0px;
   color: white;
-  text-shadow: 0px 0px 5px #000000;
+  text-shadow: 0px 0px 3px #000000;
   border-color: black;
   font-size: 60px;
   font-family: 'Archivo Black', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  padding: 20px;
 } 
 
 p {
@@ -41,7 +42,14 @@ ul {
   padding: 10px;
   margin-top: 20px;
   font-size: 14px;
+}
 
+#info_text {
+  text-align: justify; 
+  text-justify: inter-word; 
+  padding: 0px 20px 0px 20px; 
+  font-family: 'open sans'; 
+  font-size: 14px;'
 }
 
 .button_class {
@@ -49,7 +57,6 @@ ul {
   border-style: solid;
   border-width: 5px;
   border-color: #AE0000;
-
   color: black;
   min-width: 130px;
   border-radius: 50%;
@@ -59,7 +66,7 @@ ul {
   text-align: center;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'arial black';
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .button_class:hover{
@@ -81,7 +88,7 @@ ul {
   text-align: center;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'arial black';
+  font-family: 'Archivo Black', sans-serif;
   color: white;
 }
 

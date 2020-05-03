@@ -75,7 +75,7 @@ function setup() {
   	range.id('small_slider');
   	range.style('order: 2');
   	p.style('order: 1;')
-  	info_text.style('text-align: justify; text-justify: inter-word; padding: 0px 20px 0px 20px; font-family: open sans; font-size: 14px;')
+  	info_text.id('info_text')
   	resume.class('main_button')
 
   	//assigning appropriate functions to the DOM-elements
@@ -153,7 +153,7 @@ function update_points() {
 		points.splice(dragged_point, 1);
 		undo_drag();
 		if (started) {setup_design_matrix();}
-	}
+	} return false;
 }
 
 function undo_drag() {
@@ -371,7 +371,7 @@ function show_info() {
 
 function info_string() {
 	message = "\
-	The gradient descent algoritm tries to find the best fit line through a given set of points. The 'dataset' and all\
+	The gradient descent algoritm tries to find the best fit line through a given set of points. The 'dataset' and\
 	the parameters can be manipulated in real-time to see the effect on the functioning of the algoritm. The algoritm\
 	runs at approximately 60 iterations per second, but can be slower depending on the amount of points and\
 	processor capacity. <br>\
