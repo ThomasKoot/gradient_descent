@@ -1,5 +1,5 @@
 
-@media (max-width: 600px) { 
+@media (orientation: portrait) { 
     html{
         -webkit-transform: rotate(-90deg);
            -moz-transform: rotate(-90deg);
@@ -14,7 +14,7 @@
         width: 320px; /*this is the iPhone screen width.*/
         position: absolute;
         top: 100%;
-            left: 0
+        left: 0
     }
 }
 
