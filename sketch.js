@@ -38,7 +38,7 @@ function setup() {
 	range = createSlider(0, 6, 1, 1);			
 	canvas = createCanvas(500, 500);
 	reset = createButton('RESET');
-	p = createP("DEGREE: 1");
+	p = createP("DEGREE: " + range.value());
 	learning_rate = createSlider(0, 1.1, 0.1, 0)
 	info_text = createP(info_string())
 	info_header = createP("Interactive animation of a gradient descent algoritm <br>programming by Thomas Koot<hr>")
@@ -119,8 +119,6 @@ function draw() {
 				theta = update_theta(design_matrix);
 				i -= 1;
 			}
-
-			
 		}
 		cost_function(design_matrix);
 		display_function(theta);
@@ -339,7 +337,7 @@ function start_stop() {
 			generate.html('STOP');
 			running = true;
 		}
-	} else {
+	} else if (points.length != 0) {
 		started = true;
 		setup_design_matrix();
 		generate.html('STOP');
