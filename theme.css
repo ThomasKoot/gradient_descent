@@ -1,23 +1,4 @@
 
-@media (orientation: portrait) { 
-    html{
-        -webkit-transform: rotate(-90deg);
-           -moz-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
-             -o-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-        -webkit-transform-origin: left top;
-           -moz-transform-origin: left top;
-            -ms-transform-origin: left top;
-             -o-transform-origin: left top;
-                transform-origin: left top;
-        width: 320px; /*this is the iPhone screen width.*/
-        position: absolute;
-        top: 100%;
-        left: 0
-    }
-}
-
 body {
   background: #CFCFCF;
 }

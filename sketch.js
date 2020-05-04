@@ -89,6 +89,11 @@ function setup() {
   	canvas.mouseReleased(undo_drag);
   	resume.mousePressed(show_info);
   	
+  	if ( 'orientation' in screen ) {
+  		locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
+		locOrientation('landscape');
+  	}
+
   	//initialize theta
   	
   	for (var i = 0; i<=order ; i++) {
